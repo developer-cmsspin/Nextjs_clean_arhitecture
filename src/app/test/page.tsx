@@ -10,16 +10,13 @@ export default function Test() {
     container.register("ITestAction", { useClass: TestAction });
     const action = container.resolve<ITestAction>("ITestAction");
 
-    let loading = false;
-    let client: TestInformation = null;
+    const loading = action.GetTestLoading();
+    const client: TestInformation = action.GetTestData();
 
-    action.GetTestLoading().then(x => loading = x);
-    action.GetTestData().then(x => client = x);
-
-
+    action.LoadExecute();
 
     useEffect(() => {
-        action.GetTestLoading();
+
     });
 
     return (

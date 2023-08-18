@@ -1,6 +1,4 @@
-import DependencyInjectionApplication from '@/application/dependencyInjectionApplication';
 import { Providers } from '@/infrastructure/persistence/redux/provider';
-import DependencyInjectionInfrastructureService from '@/infrastructure/service/dependencyInjectionInfrastructureService';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
@@ -14,8 +12,6 @@ import './globals.css';
 //https://adhithiravi.medium.com/what-are-server-components-and-client-components-in-react-18-and-next-js-13-6f869c0c66b0
 
 const inter = Inter({ subsets: ['latin'] })
-DependencyInjectionApplication();
-DependencyInjectionInfrastructureService();
 
 export const metadata: Metadata = {
   title: 'Test',

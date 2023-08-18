@@ -1,13 +1,13 @@
 import IGetCliUseCase from "@/domain/interfaces/application/cli/iGetCliUseCase";
+import { getDependency } from "@/shared/hooks/dependency";
 import { call, takeLatest } from "redux-saga/effects";
-import "reflect-metadata";
-import { container } from "tsyringe";
 
 function* LoadAction(): any {
-  const homeApplication = container.resolve<IGetCliUseCase>("IHomeApplication");
+  console.log("LoadAction");
+  const homeApplication = getDependency<IGetCliUseCase>("IGetCliUseCase");
   yield call(async () => await homeApplication.handler());
 }
 
 export default function* testSaga(): any {
-  yield takeLatest("cli/load", LoadAction);
+  yield takeLatest("test/load", LoadAction);
 }

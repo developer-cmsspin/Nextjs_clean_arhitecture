@@ -1,15 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from "@reduxjs/toolkit/dist/query";
-import reducer from "./test/reducer";
+import createSagaMiddleware from "redux-saga";
+import rootSaga from "./rootSagas";
+import testReducer from "./test/reducerTest";
 
-//https://github.com/wpcodevo/nextjs13-redux-toolkit/blob/main/src/redux/store.ts
+const sagaMiddleware = createSagaMiddleware();
 export const store = configureStore({
-  reducer: {
-    reducerCli: reducer,
-  },
-  devTools: process.env.NODE_ENV !== "production",
+  reducer: { testReducer },
+  middleware: [sagaMiddleware],
 });
-setupListeners(store.dispatch);
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+sagaMiddleware.run(rootSaga);

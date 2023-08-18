@@ -1,9 +1,8 @@
-
 const FooterData = () => {
     return (
-        <div>
+        <>
             footer
-        </div>
+        </>
     );
 };
 

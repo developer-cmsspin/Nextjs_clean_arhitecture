@@ -1,11 +1,12 @@
+import TestInformation from "@/domain/test/models/testInformation";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
   loading: false,
 } as TestState;
 
-export const reducer = createSlice({
-  name: "cli",
+export const test = createSlice({
+  name: "test",
   initialState,
   reducers: {
     reset: () => initialState,
@@ -23,5 +24,5 @@ export const reducer = createSlice({
   },
 });
 
-export const { load, complete, error, reset } = reducer.actions;
-export default reducer.reducer;
+export const { load, complete, error, reset } = test.actions;
+export default test.reducer;

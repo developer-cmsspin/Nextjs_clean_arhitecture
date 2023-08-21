@@ -1,4 +1,4 @@
-import TestInformation from "@/domain/test/models/testInformation";
+import ResponseExchange from "@/domain/test/models/responseExchange";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -13,7 +13,7 @@ export const test = createSlice({
     load: (state) => {
       state.loading = true;
     },
-    complete: (state, action: PayloadAction<TestInformation>) => {
+    complete: (state, action: PayloadAction<ResponseExchange>) => {
       state.loading = false;
       state.client = action.payload;
     },

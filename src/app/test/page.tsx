@@ -1,7 +1,7 @@
 'use client';
 
 import ITestAction from "@/domain/interfaces/infrastructure/persistence/redux/iTestAction";
-import TestInformation from "@/domain/test/models/testInformation";
+import ResponseExchange from "@/domain/test/models/responseExchange";
 import { dependencyInjection, getDependency } from "@/shared/hooks/dependency";
 import "reflect-metadata";
 
@@ -11,7 +11,7 @@ export default function Test() {
     const action = getDependency<ITestAction>("ITestAction");
 
     const loading = action.GetTestLoading();
-    const client: TestInformation = action.GetTestData();
+    const client: ResponseExchange = action.GetTestData();
 
     action.LoadExecute();
 
@@ -21,7 +21,20 @@ export default function Test() {
             {loading ? (
                 <div>loading</div>
             ) : client ? (
-                <div >{client.name}</div>
+                <>
+                    <div>===============================</div>
+                    <div>total items {client.list.length}</div>
+                    <div>===============================</div>
+                    <div>
+                        {client.list.map((exchange, i) => {
+                            console.log("Entered");
+                            // Return the element. Also pass key     
+                            return (<><div>--{exchange.name}({exchange.value} USD)</div></>)
+                        })}
+                    </div>
+                </>
+
+
             ) : (
                 null
             )

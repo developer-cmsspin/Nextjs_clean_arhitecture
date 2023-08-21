@@ -1,9 +1,9 @@
-import TestInformation from "@/domain/test/models/testInformation";
+import ResponseExchange from "@/domain/test/models/responseExchange";
 
 export default interface ITestAction {
-  GetTestData(): TestInformation;
+  GetTestData(): ResponseExchange;
   GetTestLoading(): boolean;
-  SetTest(data: TestInformation): Promise<void>;
+  SetTest(data: ResponseExchange): Promise<void>;
   SetError(error: any): Promise<void>;
   //events
   LoadExecute(): Promise<void>;

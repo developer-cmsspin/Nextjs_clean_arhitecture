@@ -1,5 +1,6 @@
-import TestInformation from "@/domain/test/models/testInformation";
+import RequestExchangeDto from "@/domain/test/dtos/requestExchangeDto";
+import ResponseExchangeDto from "@/domain/test/dtos/responseExchangeDto";
 
 export default interface IGetCliUseCase {
-  handler(): Promise<TestInformation>;
+  handler(request: RequestExchangeDto): Promise<ResponseExchangeDto>;
 }

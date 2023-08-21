@@ -1,5 +1,5 @@
 import ITestAction from "@/domain/interfaces/infrastructure/persistence/redux/iTestAction";
-import TestInformation from "@/domain/test/models/testInformation";
+import ResponseExchange from "@/domain/test/models/responseExchange";
 import "reflect-metadata";
 import { singleton } from "tsyringe";
 import { useAppSelector, useExternalDispatch } from "../hooks";
@@ -13,7 +13,7 @@ export default class TestAction implements ITestAction {
   public async LoadExecute(): Promise<void> {
     if (!(await this.GetTestData())) this.dispatch(load());
   }
-  public GetTestData(): TestInformation {
+  public GetTestData(): ResponseExchange {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     return useAppSelector((state) => state.testReducer.client);
   }
@@ -22,7 +22,7 @@ export default class TestAction implements ITestAction {
     return useAppSelector((state) => state.testReducer.loading);
   }
 
-  public async SetTest(data: TestInformation): Promise<void> {
+  public async SetTest(data: ResponseExchange): Promise<void> {
     this.dispatch(complete(data));
   }
   public async SetError(error: any): Promise<void> {

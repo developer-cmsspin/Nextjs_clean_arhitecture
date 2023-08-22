@@ -18,5 +18,5 @@ export const MapperConfigurationExchange = function () {
       mapWith(ExchangeMoneyDto, ExchangeMoney, (source) => source.list)
     )
   );
-  createMap(mapper, RequestExchange, RequestExchangeDto);
+  createMap(mapper, RequestExchangeDto, RequestExchange);
 };

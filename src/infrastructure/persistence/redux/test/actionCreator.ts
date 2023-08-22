@@ -4,7 +4,6 @@ import { getDependency } from "@/shared/hooks/dependency";
 import { call, takeLatest } from "redux-saga/effects";
 
 function* LoadAction(): any {
-  console.log("LoadAction");
   const homeApplication = getDependency<IGetCliUseCase>("IGetCliUseCase");
   yield call(
     async () => await homeApplication.handler(new RequestExchangeDto())

@@ -1,7 +1,7 @@
 import { classes } from "@automapper/classes";
-import { createMapper } from "@automapper/core";
+import { Mapper, createMapper } from "@automapper/core";
 
 // Create and export the mapper
-export const mapper = createMapper({
+export const mapper: Mapper = createMapper({
   strategyInitializer: classes(),
 });

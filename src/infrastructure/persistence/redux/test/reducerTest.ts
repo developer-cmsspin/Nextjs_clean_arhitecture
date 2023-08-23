@@ -1,4 +1,5 @@
 import ResponseExchange from "@/domain/test/models/responseExchange";
+import TestState from "@/domain/test/states/testState";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {

@@ -1,13 +1,13 @@
-import ResponseExchange from "@/domain/test/models/responseExchange";
-import TestState from "@/domain/test/states/testState";
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import ResponseExchange from '@/domain/test/models/responseExchange';
+import TestState from '@/domain/test/states/testState';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState = {
-  loading: false,
+  loading: false
 } as TestState;
 
 export const test = createSlice({
-  name: "test",
+  name: 'test',
   initialState,
   reducers: {
     reset: () => initialState,
@@ -21,8 +21,8 @@ export const test = createSlice({
     error: (state, action: PayloadAction<any>) => {
       state.loading = false;
       state.error = action.payload;
-    },
-  },
+    }
+  }
 });
 
 export const { load, complete, error, reset } = test.actions;

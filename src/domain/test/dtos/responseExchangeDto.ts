@@ -1,5 +1,5 @@
-import { AutoMap } from "@automapper/classes";
-import ExchangeMoneyDto from "./exchangeMoneyDto";
+import { AutoMap } from '@automapper/classes';
+import ExchangeMoneyDto from './exchangeMoneyDto';
 
 export default class ResponseExchangeDto {
   constructor(listExchange: Array<ExchangeMoneyDto> = []) {

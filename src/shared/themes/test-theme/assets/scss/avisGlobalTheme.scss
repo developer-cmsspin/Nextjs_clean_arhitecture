@@ -1,0 +1,68 @@
+.test:root {
+  //BASE COLORS
+  --base: #d4002a;
+  --base-1: #d4002a25;
+  --base-2: #d4002a35;
+  --base-3: #d4002a50;
+  --base-4: #d4002a65;
+  --base-5: #d4002a80;
+  --base-6: #d4002a;
+
+  --secondary: #000000;
+  --secondary-1: #00000020;
+  --secondary-2: #00000030;
+  --secondary-3: #00000045;
+  --secondary-4: #00000060;
+  --secondary-5: #00000075;
+  --secondary-6: #000000;
+
+  --tertiary: #65615d;
+  --tertiary-1: #65615d25;
+  --tertiary-2: #65615d35;
+  --tertiary-3: #65615d50;
+  --tertiary-4: #65615d65;
+  --tertiary-5: #65615d80;
+  --tertiary-6: #65615d;
+
+  --fourth: #e1ded9;
+  --fourth-1: #e1ded925;
+  --fourth-2: #e1ded935;
+  --fourth-3: #e1ded950;
+  --fourth-4: #e1ded965;
+  --fourth-5: #e1ded980;
+  --fourth-6: #e1ded9;
+
+  //Font Family
+  --font-base: var(--font-inter);
+  --font-secondary: var(--arquitecta);
+  --font-titles: var(--arquitecta);
+  --titles-transform: uppercase;
+
+  //colors
+  --color-body: var(--secondary);
+  --color-titles: var(--secondary);
+
+  //HEADER
+  --bg-header: var(--base);
+
+  //Popover
+  --radius-popover: 0;
+  --border-color-popover: rgba(255, 255, 255, 0);
+
+  //buttons
+  --text-transform-button: uppercase;
+
+  /*#region BUTTONGHOST */
+  //hover
+  --bg-btn-hover-ghost: var(--fourth-4);
+  --color-btn-hover-ghost: var(--secondary);
+
+  //active
+  --bg-btn-ghost-active: var(--fourth-5);
+  --color-btn-ghost-active: var(--base);
+  /*#endregion */
+}
+
+html.test {
+  letter-spacing: 0.03rem;
+}

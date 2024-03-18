@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="8.025">
+  <testsuite name="Call repositories Test" errors="0" failures="0" skipped="0" timestamp="2023-11-02T19:12:23" time="7.278" tests="1">
+    <testcase classname="Call repositories Test happy path LoadExecute" name="Call repositories Test happy path LoadExecute" time="0.011">
+    </testcase>
+  </testsuite>
+  <testsuite name="Call API Template API" errors="0" failures="0" skipped="0" timestamp="2023-11-02T19:12:23" time="7.349" tests="1">
+    <testcase classname="Call API Template API happy path call api" name="Call API Template API happy path call api" time="0.029">
+    </testcase>
+  </testsuite>
+  <testsuite name="Get customer template" errors="0" failures="0" skipped="0" timestamp="2023-11-02T19:12:23" time="7.388" tests="2">
+    <testcase classname="Get customer template happy path get customer template without cache" name="Get customer template happy path get customer template without cache" time="0.029">
+    </testcase>
+    <testcase classname="Get customer template happy path get customer template with cache" name="Get customer template happy path get customer template with cache" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Call API" errors="0" failures="0" skipped="0" timestamp="2023-11-02T19:12:23" time="7.4" tests="1">
+    <testcase classname="Call API happy path call api" name="Call API happy path call api" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="Get exchange information" errors="0" failures="0" skipped="0" timestamp="2023-11-02T19:12:23" time="7.411" tests="1">
+    <testcase classname="Get exchange information happy path get information" name="Get exchange information happy path get information" time="0.019">
+    </testcase>
+  </testsuite>
+</testsuites>

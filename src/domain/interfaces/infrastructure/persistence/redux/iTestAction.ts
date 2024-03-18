@@ -1,4 +1,4 @@
-import ResponseExchange from "@/domain/test/models/responseExchange";
+import ResponseExchange from '@/domain/test/models/responseExchange';
 
 export default interface ITestAction {
   GetTestData(): ResponseExchange;

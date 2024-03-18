@@ -1,13 +1,9 @@
-import FooterData from '@/shared/components/footer'
-import styles from './page.module.css'
+import ThemeComponent from '@/package/switch-themes/themeComponent';
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className={styles.main}>
-      <div>
-        Home Page
-      </div>
-      <FooterData />
-    </main>
-  )
+    <ThemeComponent source="page:/">
+      <div>NOT FOUND</div>
+    </ThemeComponent>
+  );
 }

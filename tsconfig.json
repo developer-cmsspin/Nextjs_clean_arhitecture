@@ -14,6 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "plugins": [
@@ -22,7 +23,14 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/atoms/*": ["./src/package/energizee-ui-kit/components/ui/01_atoms/*"],
+      "@/molecules/*": ["./src/package/energizee-ui-kit/components/ui/02_molecules/*"],
+      "@/components/*": ["./src/package/energizee-ui-kit/components/ui/03_components/*"],
+      "@/themes/*": ["./src/shared/themes/*"],
+      "@/utilities/*": ["./src/package/energizee-ui-kit/globalStyles/utilities/*"],
+      "@/globalStyles/*": ["./src/package/energizee-ui-kit/globalStyles/*"],
+      "@/icomoon/*": ["./src/shared/themes/energizeeUI/assets/fonts/icomoon/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

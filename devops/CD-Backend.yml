@@ -1,0 +1,57 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+trigger: none
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm install -g typescript
+    displayName: 'install typescript'
+
+  - script: |
+      npm install -g ts-node
+    displayName: 'install ts-node'
+
+  - script: |
+      echo "NEXT_PUBLIC_THEME=$(theme)" > .env
+      echo "******** NEW FILE ***********"
+      cat .env
+    displayName: 'modify .env'
+
+  - script: |
+      yarn install
+    displayName: 'yarn install'
+
+  - script: |
+      echo THEME $(theme)
+      yarn build
+    displayName: 'yarn build'
+    env:
+      NEXT_PUBLIC_THEME: $(theme)
+
+  - task: Docker@2
+    displayName: Build an image
+    inputs:
+      command: build
+      dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+      buildContext: '$(Build.SourcesDirectory)'
+      repository: 'test-frontend'
+
+  - task: ECRPushImage@1
+    inputs:
+      awsCredentials: 'aws-prod'
+      regionName: 'us-east-1'
+      imageSource: 'imagename'
+      sourceImageName: 'test-frontend'
+      repositoryName: 'test-frontend'
+      # autoCreateRepository: true
+      sourceImageTag: $(Build.BuildId)
+      pushTag: latest

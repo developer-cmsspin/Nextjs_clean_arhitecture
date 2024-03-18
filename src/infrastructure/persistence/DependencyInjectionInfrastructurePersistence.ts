@@ -1,8 +1,10 @@
-import "reflect-metadata";
-import { container } from "tsyringe";
-import TestAction from "./redux/test/testAction";
+import 'reflect-metadata';
+import { Lifecycle, container } from 'tsyringe';
+//import ContentSiteCache from './cache/contentSite/contentSiteCache';
+import CacheContextStrategy from './cache/strategy/cacheContextStrategy';
 
 export const DependencyInjectionInfrastructurePersistence = (): void => {
-  container.register("ITestAction", { useClass: TestAction });
+  //container.register('ICustomerTemplateAction', { useClass: ContentSiteCache });
+  container.register('CacheContextStrategy', { useClass: CacheContextStrategy }, { lifecycle: Lifecycle.Singleton });
 };
 export default DependencyInjectionInfrastructurePersistence;

@@ -1,4 +1,4 @@
-import { AutoMap } from "@automapper/classes";
+import { AutoMap } from '@automapper/classes';
 
 export default class RequestExchange {
   public constructor(start: number = 100, limit: number = 100) {

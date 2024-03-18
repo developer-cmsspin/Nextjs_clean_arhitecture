@@ -1,4 +1,4 @@
-import ResponseExchangeDto from "../dtos/responseExchangeDto";
+import ResponseExchangeDto from '../dtos/responseExchangeDto';
 
 export default class TestState {
   public loading: boolean = false;

@@ -1,0 +1,41 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+trigger: none
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm install -g typescript
+    displayName: 'install typescript'
+
+  - script: |
+      npm install -g ts-node
+    displayName: 'install ts-node'
+
+  - script: |
+      yarn install
+    displayName: 'yarn install'
+
+  - script: |
+      yarn jest --coverage
+    displayName: "yarn jest --ci --testResultsProcessor='jest-junit' --coverage"
+
+  - task: PublishTestResults@2
+    displayName: 'Publish Test Results'
+    inputs:
+      testResultsFiles: '**junit*.xml'
+      testRunTitle: TestRun $(node_version)
+
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage results'
+    inputs:
+      codeCoverageTool: 'cobertura'
+      summaryFileLocation: '**/coverage/clover.xml'

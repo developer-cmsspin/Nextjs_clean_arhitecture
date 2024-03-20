@@ -1,7 +1,7 @@
 'use client';
 
 import { ThemeComponentProps } from './domain/ThemeComponentProps';
-import testTheme from './testTheme';
+import switchTheme from './switchTheme';
 
 /**
  * Represents a themed component for client-side rendering that renders different content based on the specified source.
@@ -11,7 +11,7 @@ import testTheme from './testTheme';
  * it renders the provided children; otherwise, it renders the component associated with the theme.
  */
 const ThemeComponentClient = ({ children, source }: ThemeComponentProps) => {
-  const route = testTheme.getRouteTheme(source);
+  const route = switchTheme.getRouteTheme(source);
   if (route === undefined) {
     return <>{children}</>;
   } else {

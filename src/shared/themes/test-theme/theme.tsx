@@ -12,7 +12,7 @@ export default class ThemeTest implements ITheme {
   public name: string;
 
   public constructor() {
-    this.name = 'test';
+    this.name = 'theme-test';
 
     this.routes = [
       new RouteTheme(`page:/`, Page)
@@ -30,23 +30,23 @@ export default class ThemeTest implements ITheme {
 
   public getMetadata(): Metadata {
     return {
-      title: 'test',
-      description: ' test',
+      title: 'theme-test',
+      description: ' theme-test',
       icons: {
-        icon: '/themes/test/img/favicon/favicon.ico'
+        icon: '/themes/theme-test/img/favicon/favicon.ico'
       },
       metadataBase: new URL('https://www.google.com/'),
       openGraph: {
         url: 'https://www.google.com',
-        title: 'Test',
+        title: 'theme-test',
         images: [
           {
-            url: 'https://test.com/wp-content/uploads/2023/06/Logo-wo_Mesa-de-trabajo-1.png',
+            url: 'https://theme-test.com/wp-content/uploads/2023/06/Logo-wo_Mesa-de-trabajo-1.png',
             width: 800,
             height: 600
           },
           {
-            url: 'https://test.com/wp-content/uploads/2023/06/Logo-wo_Mesa-de-trabajo-1.png',
+            url: 'https://theme-test.com/wp-content/uploads/2023/06/Logo-wo_Mesa-de-trabajo-1.png',
             width: 1800,
             height: 1600,
             alt: 'My custom alt'

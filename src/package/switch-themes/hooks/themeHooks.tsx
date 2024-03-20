@@ -1,4 +1,4 @@
-import testTheme from '@/package/switch-themes/testTheme';
+import switchTheme from '@/package/switch-themes/switchTheme';
 
 /**
  * Retrieves the base theme based on the provided source and checks if it exists.
@@ -6,6 +6,6 @@ import testTheme from '@/package/switch-themes/testTheme';
  * @returns A boolean value indicating whether the base theme exists for the provided source.
  */
 export default function useBaseTheme(source: string): boolean {
-  const route = testTheme.getRouteTheme(source);
+  const route = switchTheme.getRouteTheme(source);
   return route == undefined;
 }

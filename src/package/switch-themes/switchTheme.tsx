@@ -42,7 +42,7 @@ export default class SwitchTheme {
    */
   private static findTheme(nameTheme: string): ITheme {
     const theme = this.themes.find((theme) => theme.name === nameTheme);
-    if (theme === undefined) throw new Error('Theme not found');
+    if (theme === undefined) throw new Error('Theme ' + nameTheme + ' not found');
     else return theme;
   }
 

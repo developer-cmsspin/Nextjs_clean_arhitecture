@@ -6,7 +6,7 @@ import testReducer from './test/reducerTest';
 const sagaMiddleware = createSagaMiddleware();
 export const store = configureStore({
   reducer: { testReducer },
-  middleware: [sagaMiddleware]
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware)
 });
 
 export type RootState = ReturnType<typeof store.getState>;

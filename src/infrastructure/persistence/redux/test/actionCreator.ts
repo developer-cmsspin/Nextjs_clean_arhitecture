@@ -1,5 +1,5 @@
+import RequestExchangeDto from '@/domain/cli-data/dtos/requestExchangeDto';
 import IGetCliUseCase from '@/domain/interfaces/application/useCase/iGetCliUseCase';
-import RequestExchangeDto from '@/domain/test/dtos/requestExchangeDto';
 import { getDependency } from '@/shared/hooks/dependency';
 import { call, takeLatest } from 'redux-saga/effects';
 

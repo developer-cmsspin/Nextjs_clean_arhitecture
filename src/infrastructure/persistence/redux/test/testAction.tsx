@@ -1,5 +1,5 @@
+import ResponseExchange from '@/domain/cli-data/models/responseExchange';
 import ITestAction from '@/domain/interfaces/infrastructure/persistence/redux/iTestAction';
-import ResponseExchange from '@/domain/test/models/responseExchange';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import 'reflect-metadata';

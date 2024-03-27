@@ -1,7 +1,7 @@
 import axios from 'axios';
 import 'reflect-metadata';
 import { container } from 'tsyringe';
-import ApiTest from './Test/ApiTest';
+import ApiTest from './cli-api/ApiTest';
 
 export const DependencyInjectionInfrastructureService = (): void => {
   container.register('IApiTest', {

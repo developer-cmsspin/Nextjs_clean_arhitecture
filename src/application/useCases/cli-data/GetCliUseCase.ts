@@ -1,13 +1,13 @@
 'use client';
 
+import RequestExchangeDto from '@/domain/cli-data/dtos/requestExchangeDto';
+import ResponseExchangeDto from '@/domain/cli-data/dtos/responseExchangeDto';
+import RequestExchange from '@/domain/cli-data/models/requestExchange';
 import IGetCliUseCase from '@/domain/interfaces/application/useCase/iGetCliUseCase';
 import type ITestAction from '@/domain/interfaces/infrastructure/persistence/redux/iTestAction';
 import type IApiTest from '@/domain/interfaces/infrastructure/service/api/iApiTest';
-import RequestExchangeDto from '@/domain/test/dtos/requestExchangeDto';
-import ResponseExchangeDto from '@/domain/test/dtos/responseExchangeDto';
-import RequestExchange from '@/domain/test/models/requestExchange';
 
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ResponseExchange from '@/domain/cli-data/models/responseExchange';
 import type { Mapper } from '@automapper/core';
 import 'reflect-metadata';
 import { inject, injectable } from 'tsyringe';

@@ -7,7 +7,7 @@ import { MapperConfigurationExchange } from './configuration/mappings/mapperExch
 //import ContentRequestConverter from './mappers/content/contentRequestConverter';
 //import ContentResponseConverter from './mappers/content/contentResponseConverter';
 //import GetCustomerTemplateUseCase from './useCases/customer/getCustomerTemplateUseCase';
-import GetCliUseCase from './useCases/test/GetCliUseCase';
+import GetCliUseCase from './useCases/cli-data/GetCliUseCase';
 
 export const DependencyInjectionApplication = (): void => {
   container.register<Mapper>('IMapper', { useValue: mapper });

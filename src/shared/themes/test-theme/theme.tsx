@@ -2,10 +2,9 @@ import ITheme from '@/package/switch-themes/domain/interfaces/ITheme';
 import RouteTheme from '@/package/switch-themes/domain/routeTheme';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
-
-//import Slider from '../test/components/slider/slider';
 import layout from './layout';
 import Page from './page';
+import ListProduct from './product/list';
 
 export default class ThemeTest implements ITheme {
   public routes: RouteTheme[];
@@ -15,7 +14,8 @@ export default class ThemeTest implements ITheme {
     this.name = 'theme-test';
 
     this.routes = [
-      new RouteTheme(`page:/`, Page)
+      new RouteTheme(`page:/`, Page),
+      new RouteTheme(`page:/product/list`, ListProduct)
       //new RouteTheme(`page:/security`, Page)
 
       //new RouteTheme('component:/location/locationComplete', LocationComplete),
@@ -62,10 +62,12 @@ export default class ThemeTest implements ITheme {
           follow: true
         }
       },
+      /*
       viewport: {
         width: 'device-width',
         initialScale: 1
       },
+      */
       verification: {
         google: 'XXXXXXXXXX'
       }

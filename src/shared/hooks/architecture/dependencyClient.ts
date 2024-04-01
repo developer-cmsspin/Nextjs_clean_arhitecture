@@ -1,5 +1,6 @@
 'use client';
 import dependencyInjectionClientApplication from '@/application/dependencyInjectionClientApplication';
+import dependencyInjectionClientDomain from '@/domain/dependencyInjectionClientDomain';
 import DependencyInjectionClientInfrastructurePersistence from '@/infrastructure/persistence/DependencyInjectionClientInfrastructurePersistence';
 import dependencyInjectionClientInfrastructureService from '@/infrastructure/service/dependencyInjectionClientInfrastructureService';
 import 'reflect-metadata';
@@ -18,6 +19,7 @@ import 'reflect-metadata';
  * ```
  */
 const DependencyInjectionClient = () => {
+  dependencyInjectionClientDomain();
   dependencyInjectionClientApplication();
   dependencyInjectionClientInfrastructureService();
   DependencyInjectionClientInfrastructurePersistence();

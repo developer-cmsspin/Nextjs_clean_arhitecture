@@ -1,4 +1,5 @@
 import DependencyInjectionApplication from '@/application/dependencyInjectionApplication';
+import DependencyInjectionDomain from '@/domain/dependencyInjectionDomain';
 import DependencyInjectionInfrastructurePersistence from '@/infrastructure/persistence/DependencyInjectionInfrastructurePersistence';
 import { DependencyInjectionInfrastructureService } from '@/infrastructure/service/dependencyInjectionInfrastructureService';
 
@@ -14,6 +15,7 @@ import { container } from 'tsyringe';
  * Dependencies can later be resolved using the `getDependency` function provided by this module.
  */
 export function dependencyInjection() {
+  DependencyInjectionDomain();
   DependencyInjectionApplication();
   DependencyInjectionInfrastructureService();
   DependencyInjectionInfrastructurePersistence();

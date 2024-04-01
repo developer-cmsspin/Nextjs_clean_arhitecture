@@ -1,0 +1,24 @@
+:root {
+  --radius-checkbox: var(--sizing-XXS);
+  //Default
+  --bg-checkbox: var(--eco-5);
+  --color-checkbox: var(--neutral-6);
+  --border-checkbox: var(--border-input);
+  --border-checkbox-hover: var(--base-4);
+
+  //active
+  --bg-checkbox-active: var(--secondary);
+  --border-checkbox-active: var(--border-input);
+
+  //hover
+  --border-checkbox-hover: var(--secondary-5);
+
+  //Size
+  --size-checkbox: 1.8rem;
+
+  //eco
+  --bg-checkbox-label-eco: var(--white);
+
+  //disabled
+  --color-checkbox-disabled: var(--neutral-3);
+}

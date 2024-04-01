@@ -1,0 +1,177 @@
+.t_XXXL,
+.h1 {
+  font-family: var(--font-titles);
+  font-size: var(--font-size-XXXL);
+  line-height: 1em;
+  font-weight: 600;
+  color: var(--color-titles);
+  text-transform: var(--titles-transform);
+}
+
+.h1 {
+  margin-bottom: var(--spacing-L);
+}
+
+.t_XXL,
+.h2 {
+  font-family: var(--font-titles);
+  font-size: var(--font-size-XXL);
+  line-height: 1em;
+  font-weight: 600;
+  color: var(--color-titles);
+  text-transform: var(--titles-transform);
+}
+
+.h2 {
+  margin-bottom: var(--spacing-L);
+}
+
+.t_XL,
+.h3 {
+  font-family: var(--font-titles);
+  font-size: var(--font-size-XL);
+  line-height: 1em;
+  font-weight: 700;
+  color: var(--color-titles);
+  text-transform: var(--titles-transform);
+}
+
+.h3 {
+  margin-bottom: var(--spacing-L);
+}
+
+.t_L,
+.h4 {
+  font-family: var(--font-titles);
+  font-size: var(--font-size-L);
+  line-height: 1em;
+  font-weight: 700;
+  color: var(--color-titles);
+  text-transform: var(--titles-transform);
+}
+
+.h4 {
+  margin-bottom: var(--spacing-L);
+}
+
+.detail {
+  font-family: var(--font-titles);
+  font-size: var(--font-size-M);
+  line-height: 1.4em;
+  font-weight: 700;
+  color: var(--color-titles);
+  text-transform: var(--titles-transform);
+}
+
+.category {
+  font-size: var(--font-size-XS);
+  line-height: 1.4em;
+  color: var(--textDisclaimerColor);
+}
+
+.caption {
+  font-size: var(--font-size-XS);
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.subheading {
+  font-size: var(--font-size-S);
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-M);
+  line-height: 1.5em;
+}
+
+.disclaimer {
+  font-size: var(--font-size-XXS);
+  color: var(--textDisclaimerColor);
+  line-height: 1.4em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/**
+*----------------------------------------------------------------------
+*Obliga al texto a estar en una sola linea.
+*-----------------------------------------------------------------------
+*/
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.text_nowrap {
+  white-space: nowrap;
+}
+
+.disabled {
+  opacity: 0.6;
+  user-select: none;
+
+  @at-root body[data-theme='dark'] #{&} {
+    opacity: 0.32;
+  }
+}
+
+/**
+*----------------------------------------------------------------------
+*Text Colors
+*-----------------------------------------------------------------------
+*/
+
+.text_white {
+  color: var(--textWhiteColor);
+}
+
+.text_hightlight {
+  color: var(--textHighlightColor);
+}
+
+.text_success {
+  color: var(--textSuccessColor);
+}
+
+.text_warning {
+  color: var(--textWarningColor);
+}
+
+.text_info {
+  color: var(--textInfoColor);
+}
+
+/**
+*----------------------------------------------------------------------
+*Text Align
+*-----------------------------------------------------------------------
+*/
+
+.text_center {
+  text-align: center;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_right {
+  text-align: right;
+}

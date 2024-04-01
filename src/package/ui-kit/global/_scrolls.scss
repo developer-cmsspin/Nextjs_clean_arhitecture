@@ -1,0 +1,90 @@
+//    _____                 ____
+//   / ___/______________  / / /
+//   \__ \/ ___/ ___/ __ \/ / /
+//  ___/ / /__/ /  / /_/ / / /
+// /____/\___/_/   \____/_/_/
+
+/**
+*Modifica los estilos por defecto de los scrolls
+*/
+// &::-moz-scrollbar, &::-ms-scrollbar, &::-o-scrollbar
+
+@mixin scrollGhost() {
+  scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+
+  &::-webkit-scrollbar {
+    /* Estilos barra (thumb) de scroll */
+    &-thumb {
+      opacity: 1;
+      background: transparent;
+    }
+
+    /* Estilos track de scroll  "pista"*/
+    &-track {
+      opacity: 1;
+      background: transparent;
+    }
+  }
+
+  &:hover {
+    scrollbar-color: var(--color-thumb) var(--color-track);
+
+    &::-webkit-scrollbar {
+      &-thumb {
+        background: var(--color-thumb);
+      }
+
+      /* Estilos track de scroll  "pista"*/
+      &-track {
+        background: var(--color-track);
+      }
+    }
+  }
+}
+
+body * {
+  scrollbar-color: var(--color-thumb) var(--color-track);
+  scrollbar-width: thin;
+}
+
+html {
+  &::-webkit-scrollbar {
+    width: 12px;
+
+    /* Estilos barra (thumb) de scroll */
+    &-thumb {
+      //opacity: 0;
+      transition: var(--transition);
+      background: var(--color-thumb);
+
+      &:active {
+        background: var(--color-thumb-hover) !important;
+      }
+
+      &:hover {
+        background: var(--color-thumb-hover);
+      }
+    }
+
+    /* Estilos track de scroll  "pista"*/
+    &-track {
+      //opacity: 0;
+      background: var(--color-track);
+      transition: var(--transition);
+
+      &:hover,
+      &:active {
+        background: var(--color-track);
+      }
+    }
+  }
+
+  .scroll-ghost {
+    @include scrollGhost();
+  }
+}
+
+body *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}

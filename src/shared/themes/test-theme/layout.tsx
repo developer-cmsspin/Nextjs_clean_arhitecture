@@ -1,5 +1,5 @@
-import { dependencyInjection } from '@/shared/hooks/dependency';
 //import StyleUtils from '@/utilities/utils.module.scss';
+import { dependencyInjection } from '@/shared/hooks/architecture/dependency';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 

@@ -1,0 +1,109 @@
+$displays: block, table, flex, grid;
+$positions: start, center, end, stretch, between;
+
+//Display
+@each $display in $displays {
+  .d_#{$display} {
+    display: #{$display};
+  }
+}
+
+@each $display in $displays {
+  .d_inline_#{$display} {
+    display: inline-#{$display};
+  }
+}
+
+//Align
+@each $position in $positions {
+  .align_items_#{$position} {
+    @if $position == start {
+      align-items: flex-#{$position};
+    } @else if $position == end {
+      align-items: flex-#{$position};
+    } @else {
+      align-items: #{$position};
+    }
+  }
+}
+
+@each $position in $positions {
+  .align_content_#{$position} {
+    @if $position == start {
+      align-content: flex-#{$position};
+    } @else if $position == end {
+      align-content: flex-#{$position};
+    } @else {
+      align-content: #{$position};
+    }
+  }
+}
+
+@each $position in $positions {
+  .align_self_#{$position} {
+    @if $position == start {
+      align-self: flex-#{$position};
+    } @else if $position == end {
+      align-self: flex-#{$position};
+    } @else {
+      align-self: #{$position};
+    }
+  }
+}
+
+//Justify
+@each $position in $positions {
+  .justify_items_#{$position} {
+    @if $position == between {
+      justify-items: space-#{$position};
+    } @else if $position == start {
+      justify-items: flex-#{$position};
+    } @else if $position == end {
+      justify-items: flex-#{$position};
+    } @else {
+      justify-items: #{$position};
+    }
+  }
+}
+
+@each $position in $positions {
+  .justify_content_#{$position} {
+    @if $position == between {
+      justify-content: space-#{$position};
+    } @else if $position == start {
+      justify-content: flex-#{$position};
+    } @else if $position == end {
+      justify-content: flex-#{$position};
+    } @else {
+      justify-content: #{$position};
+    }
+  }
+}
+
+@each $position in $positions {
+  .justify_self_#{$position} {
+    @if $position == between {
+      justify-self: space-#{$position};
+    } @else if $position == start {
+      justify-self: flex-#{$position};
+    } @else if $position == end {
+      justify-self: flex-#{$position};
+    } @else {
+      justify-self: #{$position};
+    }
+  }
+}
+
+//Wrap
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_nowrap {
+  flex-wrap: nowrap;
+}
+
+//Flex
+.flex_auto {
+  flex: 1 1 auto;
+}

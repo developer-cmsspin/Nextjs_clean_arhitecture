@@ -25,5 +25,5 @@ EXPOSE 3000
 CMD [ "node", "./server.js" ]
  
 # Add labels
-LABEL maintainer="Ritchie"
+LABEL maintainer="TestWebApp"
 LABEL version="1.0"

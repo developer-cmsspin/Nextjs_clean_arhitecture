@@ -1,0 +1,20 @@
+:root {
+  //Base
+  --color-btn-secondary: var(--white);
+  --bg-btn-secondary: var(--base);
+  --border-btn-secondary: none;
+
+  //Hover
+  --color-btn-hover-secondary: var(--white);
+  --bg-btn-hover-secondary: var(--warning);
+  --border-btn-hover-secondary: none;
+
+  //Disabled
+  --color-btn-secondary-disabled: var(--neutral-3);
+  --bg-btn-secondary-disabled: var(--neutral-1);
+  --border-btn-secondary-disabled: none;
+
+  //Font
+  --font-family-btn-secondary: var(--font-secondary);
+  --font-weight-btn-secondary: 600;
+}

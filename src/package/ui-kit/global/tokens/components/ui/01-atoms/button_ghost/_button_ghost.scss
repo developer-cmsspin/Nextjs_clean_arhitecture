@@ -1,0 +1,29 @@
+:root {
+  --color-btn-ghost: var(--base);
+  --bg-btn-ghost: transparent;
+  --border-btn-ghost: none;
+
+  //hover
+  --color-btn-hover-ghost: var(--base);
+  --bg-btn-hover-ghost: var(--base-2);
+  --border-btn-hover-ghost: none;
+
+  //disabled
+  --color-btn-ghost-disabled: var(--neutral-2);
+  --bg-btn-ghost-disabled: none;
+  --border-btn-ghost-disabled: none;
+
+  //quiet
+  --color-btn-ghost-quiet: var(--color-body);
+  --color-btn-hover-ghost-quiet: var(--color-body);
+
+  //active
+  --bg-btn-ghost-active: var(--softGreen);
+  --color-btn-ghost-active: var(--base);
+  --color-btn-ghost-active-icon: var(--base);
+  --border-btn-ghost-active: var(--white);
+
+  //Style
+  --font-weight-btn-ghost: 600;
+  --font-family-btn-ghost: var(--font-secondary);
+}

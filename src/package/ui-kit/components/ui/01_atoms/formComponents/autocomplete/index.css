@@ -1,0 +1,38 @@
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Ajusta el valor según sea necesario */
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #bfbfbf; /* Color del placeholder */
+  transition:
+    transform 0.3s,
+    font-size 0.3s,
+    color 0.3s; /* Añadido color a la transición */
+}
+
+/* Estilo para el label cuando está arriba o cuando el input tiene contenido */
+.custom-select-wrapper.has-value .custom-placeholder,
+.custom-select-wrapper .ant-select-focused + .custom-placeholder,
+.custom-select-wrapper .ant-select:not(.ant-select-disabled):hover + .custom-placeholder {
+  transform: translateY(-150%);
+  font-size: 12px; /* Ajusta el tamaño del texto cuando está arriba */
+  color: #bfbfbf; /* Color deseado para el label cuando está arriba o tiene contenido */
+  background-color: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+/* Estilo para el estado de hover */
+.custom-select-wrapper .ant-select:not(.ant-select-disabled):hover {
+  border-color: #bfbfbf; /* Color deseado para el borde en hover */
+}
+
+/* Estilo para el estado de focus */
+.custom-select-wrapper .ant-select-focused {
+  border-color: #bfbfbf; /* Color deseado para el borde en focus */
+}

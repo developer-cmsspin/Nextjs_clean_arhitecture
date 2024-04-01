@@ -1,0 +1,42 @@
+:root {
+  --radius-picker: 0;
+
+  //Default
+  --bg-picker: var(--eco-4);
+  --color-picker: var(--neutral-6);
+  --border-picker: var(--border-input);
+  --color-picker-loading: var(--base);
+
+  --font-family-picker: ;
+  --font-weight-picker: 500;
+
+  --height-picker: 3.25rem;
+  --height-picker-large: 4.125rem;
+
+  //hover
+  --bg-picker-hover: var(--base-1);
+
+  //selected
+  --bg-picker-selected: var(--softGreen);
+  --color-picker-selected: var(--success);
+
+  //eco
+  --bg-picker-label-eco: var(--white);
+
+  //disabled
+  --bg-picker-disabled: var(--neutral-1);
+  --color-picker-disabled: var(--neutral-3);
+
+  //Status
+  --bg-picker-label-success: var(--success-1);
+  --bg-picker-label-warning: var(--warning-1);
+  --bg-picker-label-error: var(--error-1);
+
+  --color-picker-success: var(--success);
+  --color-picker-warning: var(--warning);
+  --color-picker-error: var(--error);
+
+  --border-picker-success: var(--success-4);
+  --border-picker-warning: var(--warning-4);
+  --border-picker-error: var(--error-4);
+}

@@ -1,0 +1,23 @@
+:root {
+  //Base
+  --color-btn-outline: var(--base);
+  --bg-btn-outline: transparent;
+  --border-btn-outline: var(--base);
+
+  //Hover
+  --color-btn-hover-outline: var(--lime);
+  --bg-btn-hover-outline: transparent;
+  --border-btn-hover-outline: var(--lime);
+
+  //Disabled
+  --color-btn-outline-disabled: var(--neutral-2);
+  --bg-btn-outline-disabled: none;
+  --border-btn-outline-disabled: var(--neutral-1);
+
+  //Quiet
+  --color-btn-quiet-outline: var(--neutral-6);
+  --border-btn-quiet-outline: var(--neutral-5);
+
+  //Font
+  --font-family-btn-outline: var(--font-secondary);
+}

@@ -1,0 +1,24 @@
+:root {
+  --radius-input: ;
+
+  //Default
+  --bg-input: var(--eco-4);
+  --color-tick: var(--white);
+  --color-input: var(--color-titles);
+  --color-label: var(--neutral-6);
+  --border-input: var(--white);
+  --border-input-hover: var(--base-4);
+
+  --font-family-inpt-text: ;
+  --font-weight-inpt-text: 600;
+
+  --height-input: 3.25rem;
+  --height-input-large: 4.125rem;
+
+  //eco
+  --bg-input-label-eco: var(--white);
+
+  //disabled
+  --bg-input-disabled: var(--neutral-1);
+  --color-input-disabled: var(--neutral-3);
+}

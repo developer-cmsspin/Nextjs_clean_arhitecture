@@ -1,0 +1,32 @@
+:root {
+  /**
+  *----------------------------------------------------------------------
+  *MICRO ANIMACIONES
+  *
+  *Las micro animaciones cubren una pequeña cantidad de terreno.
+  *Algunos ejemplos son desvanecimientos de color, desplazamientos, acordeones, información sobre herramientas, etc.
+  *----------------------------------------------------------------------
+  */
+  --duration-100: 120ms;
+  --duration-200: 140ms;
+  --duration-300: 160ms;
+  --duration-400: 200ms;
+  --duration-500: 160ms;
+  --duration-600: 220ms;
+
+  /**
+  *----------------------------------------------------------------------
+  *MACRO ANIMACIONES
+  *
+  *Las animaciones macro cubren una mayor cantidad de terreno visual.
+  *Esto incluye grandes paneles o Cajas, movimiento a través de la pantalla, etc.
+  *----------------------------------------------------------------------
+  */
+  --duration-700: 260ms;
+  --duration-800: 300ms;
+  --duration-900: 360ms;
+  --duration-1000: 440ms;
+  --duration-1100: 600ms;
+  --duration-1200: 660ms;
+  --duration-2000: 2000ms;
+}

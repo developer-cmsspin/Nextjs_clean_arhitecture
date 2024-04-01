@@ -1,0 +1,152 @@
+$spacings: 0, auto, XXS, XS, S, M, L, XL, XXL, XXL;
+
+.m_0,
+.p_0 {
+  margin: 0;
+}
+
+@each $spacing in $spacings {
+  .p_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding: #{$spacing};
+      } @else {
+        padding: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .m_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin: #{$spacing};
+    } @else {
+      margin: var(--spacing-#{$spacing});
+    }
+  }
+}
+
+@each $spacing in $spacings {
+  .pt_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding-top: #{$spacing};
+      } @else {
+        padding-top: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .mt_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin-top: #{$spacing};
+    } @else {
+      margin-top: var(--spacing-#{$spacing});
+    }
+  }
+}
+
+@each $spacing in $spacings {
+  .pr_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding-right: #{$spacing};
+      } @else {
+        padding-right: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .mr_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin-right: #{$spacing};
+    } @else {
+      margin-right: var(--spacing-#{$spacing});
+    }
+  }
+}
+
+@each $spacing in $spacings {
+  .pb_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding-bottom: #{$spacing};
+      } @else {
+        padding-bottom: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .mb_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin-bottom: #{$spacing};
+    } @else {
+      margin-bottom: var(--spacing-#{$spacing});
+    }
+  }
+}
+
+@each $spacing in $spacings {
+  .pl_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding-left: #{$spacing};
+      } @else {
+        padding-left: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .ml_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin-left: #{$spacing};
+    } @else {
+      margin-left: var(--spacing-#{$spacing});
+    }
+  }
+}
+
+@each $spacing in $spacings {
+  .pv_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding-top: #{$spacing};
+        padding-bottom: #{$spacing};
+      } @else {
+        padding-top: var(--spacing-#{$spacing});
+        padding-bottom: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .ph_#{$spacing} {
+    @if $spacing != auto {
+      @if $spacing == 0 {
+        padding-left: #{$spacing};
+        padding-right: #{$spacing};
+      } @else {
+        padding-left: var(--spacing-#{$spacing});
+        padding-right: var(--spacing-#{$spacing});
+      }
+    }
+  }
+
+  .mv_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin-top: #{$spacing};
+      margin-bottom: #{$spacing};
+    } @else {
+      margin-top: var(--spacing-#{$spacing});
+      margin-bottom: var(--spacing-#{$spacing});
+    }
+  }
+
+  .mh_#{$spacing} {
+    @if $spacing == 0 or $spacing == auto {
+      margin-left: #{$spacing};
+      margin-right: #{$spacing};
+    } @else {
+      margin-left: var(--spacing-#{$spacing});
+      margin-right: var(--spacing-#{$spacing});
+    }
+  }
+}

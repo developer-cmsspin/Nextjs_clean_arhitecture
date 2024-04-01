@@ -1,0 +1,29 @@
+.custom-input-wrapper {
+  position: relative;
+}
+.custom-input-wrapper .ant-input:focus {
+    border-color: #bfbfbf; /* Color del borde al hacer focus */
+    box-shadow: 0 0 0 1px #bfbfbf; /* Añade sombra */
+  }
+.custom-input-wrapper .ant-input:hover {
+    border-color: #bfbfbf; /* Color del borde al hacer focus */
+    box-shadow: 0 0 0 1px #bfbfbf; /*  Añade sombra */
+  }
+
+.custom-input-placeholder {
+  position: absolute;
+  padding: 0.625rem 0.5rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #bfbfbf; /* Color del placeholder */
+  transition:
+    transform 0.3s,
+    font-size 0.3s;
+}
+
+.custom-input-wrapper.active .custom-placeholder {
+  transform: translateY(-160%);
+  background-color: #fff;
+  padding: 0 5px;
+  font-size: 12px; /* Ajusta el tamaño del texto cuando está arriba */
+}

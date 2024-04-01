@@ -1,0 +1,23 @@
+//   ______      __
+//  /_  __/___  / /_____  ____  _____
+//   / / / __ \/ //_/ _ \/ __ \/ ___/
+//  / / / /_/ / ,< /  __/ / / (__  )
+// /_/  \____/_/|_|\___/_/ /_/____/
+/**
+*Tokens. IMPORTANTE los tokens solo deben ser midificados por intrucciones del Diseñador de Cabecera.
+*ya que si cambian alguna de estas fichas cambiaran todos los componentes del Sitio.
+*/
+@import 'opacitys'; //Tokens que controlan las opacidades
+@import 'borders'; //Tokens que controlan los colores
+@import 'colors'; //Tokens que controlan los colores
+@import 'sizings'; //Tokens que controlan los tamaños
+@import 'spacings'; //Tokens que controlan los espaciados de margenes y paddings
+@import 'times'; //Tokens que controlan el tiempo en los movimientos y animaciones
+@import 'motions'; //Tokens que controlan el movimiento y animaciones de los elementos
+@import 'radius'; //Tokens que controlan las esquinas redondeadas
+@import 'shadows'; //Tokens que controlan las sombras de los objetos
+@import 'zIndex'; //Se definen los idex del theme.
+@import 'screensizings';
+@import 'typography';
+
+@import './components';

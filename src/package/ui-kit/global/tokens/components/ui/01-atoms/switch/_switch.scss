@@ -1,0 +1,30 @@
+:root {
+  --radius-switch: 1.8rem;
+
+  //Default
+  --bg-switch: var(--eco-5);
+  --color-switch: var(--neutral-6);
+  --border-switch: var(--border-input);
+
+  //active
+  --bg-switch-active: var(--secondary);
+  --border-switch-active: var(--border-input);
+
+  //hover
+  --border-switch-hover: var(--info-1);
+  --bg-switch-hover: var(--info-1);
+
+  //Size
+  --width-switch: 2.8rem;
+  --height-switch: 1.8rem;
+
+  --width-switch-small: 2.5rem;
+  --height-switch-small: 1.5rem;
+
+  //eco
+  --bg-switch-label-eco: var(--white);
+
+  //disabled
+  --bg-switch-disabled: var(--neutral-2);
+  --color-switch-disabled: var(--neutral-3);
+}

@@ -1,0 +1,29 @@
+/* index.css */
+
+.custom-checkbox-wrapper {
+  width: 300px;
+}
+
+.custom-checkbox-wrapper .ant-checkbox-inner {
+  background-color: #bfbfbf; /* Color de fondo deseado para el checkbox */
+  border-color: #bfbfbf; /* Color del borde deseado para el checkbox */
+}
+
+.custom-checkbox-wrapper .ant-checkbox + span {
+  color: #000000; /* Color del texto deseado */
+}
+
+.custom-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #bfbfbf; /* Color de fondo deseado cuando está seleccionado */
+  border-color: #bfbfbf; /* Color del borde deseado cuando está seleccionado */
+}
+
+.custom-checkbox-wrapper .ant-checkbox-checked + span {
+  color: #046d17; /* Color del texto cuando está seleccionado */
+}
+
+.custom-checkbox-wrapper .ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #bfbfbf; /* Color del borde deseado en hover */
+  background-color: #bfbfbf;
+}
+

@@ -1,0 +1,21 @@
+:root {
+  //Base Color
+  --color-btn-primary: var(--white);
+  --bg-btn-primary: var(--secondary);
+  --border-btn-primary: none;
+
+  //Hover
+  --color-btn-hover-primary: var(--white);
+  --bg-btn-hover-primary: var(--base);
+  --border-btn-hover-primary: none;
+
+  //Disabled
+  --color-btn-primary-disabled: var(--neutral-3);
+  --bg-btn-primary-disabled: var(--neutral-1);
+  --border-btn-primary-disabled: none;
+
+  //Font
+  --font-family-btn-primary: var(--font-secondary);
+  --font-weight-btn-primary: 600;
+  --text-transform-button: none;
+}

@@ -1,0 +1,63 @@
+.layout {
+  min-height: 100vh;
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__aside {
+    grid-area: aside;
+  }
+
+  &__main {
+    grid-area: main;
+  }
+
+  &__asideR {
+    grid-area: asideR;
+  }
+
+  &__footer {
+    grid-area: footer;
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+.anchor {
+  display: grid;
+  grid-template: auto / 1fr min(160px, 23%);
+}
+
+.props {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-XS);
+}
+
+.row_ui {
+  display: grid;
+  gap: var(--spacing-L);
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 31rem), 1fr));
+
+  &__small {
+    display: grid;
+    gap: var(--spacing-L);
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  }
+
+  &__item {
+    //width: calc(25% - var(--spacing-L));
+    //flex: 1 1 0;
+    text-decoration: none;
+  }
+
+  &__body {
+    display: grid;
+    justify-content: center;
+  }
+}

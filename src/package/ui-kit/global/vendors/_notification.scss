@@ -1,0 +1,144 @@
+.ant-notification .ant-notification-notice-wrapper .ant-notification-notice-close {
+  color: var(--neutral-5);
+
+  &:hover {
+    color: var(--neutral-6);
+    background-color: var(--eco-5);
+  }
+}
+
+.ant-notification .ant-notification-notice-wrapper {
+  box-shadow: var(--shadow-notification);
+  background: none;
+  a {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+[class^='ant-notification'],
+[class*=' ant-notification'] {
+  font-family: var(--font-family-base);
+}
+
+.ant-notification .ant-notification-notice-wrapper .ant-notification-notice-with-icon .ant-notification-notice-message {
+  color: var(--color-titles);
+  font-weight: 600;
+  font-size: var(--font-size-M);
+}
+
+.ant-notification .ant-notification-notice-wrapper .ant-notification-notice-with-icon .ant-notification-notice-description {
+  color: var(--color-body);
+  margin-top: var(--spacing-S);
+  margin-bottom: var(--spacing-XXS);
+}
+
+.ant-notification .ant-notification-notice-wrapper .ant-notification-notice-icon- {
+  &info {
+    &.anticon {
+      color: var(--info);
+    }
+  }
+  &success {
+    &.anticon {
+      color: var(--success);
+    }
+  }
+  &warning {
+    &.anticon {
+      color: var(--warning);
+    }
+  }
+
+  &error {
+    &.anticon {
+      color: var(--error);
+    }
+  }
+}
+
+.ant-notification-notice-info {
+  border: solid 1px var(--border-input);
+  border-left: solid 5px var(--info);
+  background: var(--bg-notification);
+  backdrop-filter: blur(30px);
+  border-radius: 0 8px 8px 0;
+
+  .ant-notification-notice-icon {
+    color: var(--info);
+  }
+
+  &.solid {
+    background-color: var(--info);
+    border-radius: 8px;
+
+    * {
+      color: var(--white) !important;
+    }
+  }
+}
+
+.ant-notification-notice-success {
+  border: solid 1px var(--border-input);
+  border-left: solid 5px var(--success);
+  background: var(--bg-notification);
+  backdrop-filter: blur(30px);
+  border-radius: 0 8px 8px 0;
+
+  .ant-notification-notice-icon {
+    color: var(--success);
+  }
+
+  &.solid {
+    background-color: var(--success);
+    border-radius: 8px;
+
+    * {
+      color: var(--white) !important;
+    }
+  }
+}
+
+.ant-notification-notice-warning {
+  border: solid 1px var(--border-input);
+  border-left: solid 5px var(--warning);
+  background: var(--bg-notification);
+  backdrop-filter: blur(30px);
+  border-radius: 0 8px 8px 0;
+
+  .ant-notification-notice-icon {
+    color: var(--warning);
+  }
+
+  &.solid {
+    background-color: var(--warning);
+    border-radius: 8px;
+
+    * {
+      color: var(--white) !important;
+      mix-blend-mode: overlay;
+    }
+  }
+}
+
+.ant-notification-notice-error {
+  border: solid 1px var(--border-input);
+  border-left: solid 5px var(--error);
+  background: var(--bg-notification);
+  backdrop-filter: blur(30px);
+  border-radius: 0 8px 8px 0;
+
+  .ant-notification-notice-icon {
+    color: var(--error);
+  }
+
+  &.solid {
+    background-color: var(--error);
+    border-radius: 8px;
+
+    * {
+      color: var(--white) !important;
+    }
+  }
+}

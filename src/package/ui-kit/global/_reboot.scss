@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: var(--font-base);
+  font-size: 12px;
+  scroll-behavior: smooth !important;
+
+  @media (min-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 14px;
+  }
+}
+
+body {
+  color: var(--color-body);
+  background: var(--bg-body);
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+/**
+*----------------------------------------------------------------------
+*Textos
+*-----------------------------------------------------------------------
+*/
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-link);
+  position: relative;
+
+  &.quiet {
+    color: var(--neutral-6);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--color-link);
+    left: 0;
+    bottom: -2px;
+    transition: var(--transition);
+  }
+
+  &:hover {
+    color: var(--color-link);
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+p {
+  margin-bottom: var(--spacing-M);
+  font-size: var(--font-size-M);
+}
+
+b {
+  color: var(--color-titles);
+}
+
+em {
+  font-weight: 700;
+}
+
+small {
+  font-size: var(--font-size-XS);
+}
+
+/**
+*----------------------------------------------------------------------
+*Images
+*-----------------------------------------------------------------------
+*/
+
+img {
+  vertical-align: top;
+}
+
+/**
+*----------------------------------------------------------------------
+*Button
+*-----------------------------------------------------------------------
+*/
+
+button {
+  border: none;
+}
+
+/**
+*----------------------------------------------------------------------
+*Listas
+*-----------------------------------------------------------------------
+*/
+ul {
+  padding-left: var(--spacing-L);
+  list-style: none;
+
+  li::before {
+    content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--base); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: large;
+  }
+}
+
+/**
+*----------------------------------------------------------------------
+*Tables
+*-----------------------------------------------------------------------
+*/
+
+.wrapper-table {
+  overflow: auto;
+  display: grid;
+}
+
+table {
+  display: table;
+  width: 100%;
+  //width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  border: none;
+  border-collapse: collapse;
+
+  thead,
+  tbody {
+    width: 100%;
+  }
+
+  tr {
+    background: var(--bg-box);
+    border-top: 1px solid var(--bg-divider);
+
+    td,
+    th {
+      padding: var(--spacing-M) var(--spacing-M);
+      border: 1px solid var(--bg-divider);
+    }
+  }
+}
+
+/**
+*----------------------------------------------------------------------
+*Code
+*-----------------------------------------------------------------------
+*/
+
+.lineCode,
+code {
+  display: inline-block;
+  margin: 0 1px;
+  padding: 0 0.4em;
+  font-size: var(--font-size-S);
+  border-radius: 3px;
+  color: var(--color-code);
+  background: var(--eco-1);
+  border: 1px solid var(--eco-4);
+}
+
+.boxCode {
+  box-shadow: unset;
+  padding: var(--spacing-S) var(--spacing-M);
+  display: block;
+  color: var(--color-code);
+  font-size: var(--font-size-S);
+  font-family: 'Lucida Console', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  line-height: 2;
+  white-space: break-spaces;
+  background: var(--eco-1);
+  border: 1px solid var(--eco-4);
+  border-radius: 6px;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}

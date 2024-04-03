@@ -1,5 +1,5 @@
 import RequestExchangeDto from '@/domain/test/dtos/requestExchangeDto';
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ResponseExchange from '@/domain/test/entities/responseExchange';
 
 /**
  * The IApiTest interface defines the contract for an API test.

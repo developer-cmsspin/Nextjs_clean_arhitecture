@@ -1,5 +1,5 @@
 'use client';
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ResponseExchange from '@/domain/test/entities/responseExchange';
 import TestState from '@/domain/test/states/testState';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 

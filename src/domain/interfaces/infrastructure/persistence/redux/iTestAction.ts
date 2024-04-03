@@ -1,4 +1,4 @@
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ResponseExchange from '@/domain/test/entities/responseExchange';
 
 /**
  * The ITestAction interface defines the contract for an action related to testing.

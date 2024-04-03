@@ -1,6 +1,6 @@
 import { mapper } from '@/application/configuration/mappings/mapper';
 import RequestExchangeDto from '@/domain/test/dtos/requestExchangeDto';
-import RequestExchange from '@/domain/test/models/requestExchange';
+import RequestExchange from '@/domain/test/entities/requestExchange';
 import AbstractConverter from '../abstractConverter';
 
 export default class RequestExchangeConverter extends AbstractConverter<RequestExchange, RequestExchangeDto> {

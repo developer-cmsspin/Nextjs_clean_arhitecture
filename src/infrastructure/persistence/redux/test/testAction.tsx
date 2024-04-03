@@ -1,6 +1,6 @@
 'use client';
 import ITestAction from '@/domain/interfaces/infrastructure/persistence/redux/iTestAction';
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ResponseExchange from '@/domain/test/entities/responseExchange';
 import { useAppDispatch, useAppSelector } from '../hooks';
 import { complete, error, loadInformation } from './reducerTest';
 

@@ -12,6 +12,7 @@ import React from 'react';
 //Load Themes
 const env = process.env;
 SwitchTheme.LoadThemes(new ThemeTest());
+
 const theme = SwitchTheme.UseThemes(env.NEXT_PUBLIC_THEME);
 
 //https://github.com/khj0426/HJ_Devlog/blob/main/src/app/layout.tsx

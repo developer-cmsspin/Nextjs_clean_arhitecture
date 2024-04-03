@@ -1,7 +1,7 @@
 import IApiTest from '@/domain/interfaces/infrastructure/service/api/iApiTest';
 import RequestExchangeDto from '@/domain/test/dtos/requestExchangeDto';
-import ExchangeMoney from '@/domain/test/models/exchangeMoney';
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ExchangeMoney from '@/domain/test/entities/exchangeMoney';
+import ResponseExchange from '@/domain/test/entities/responseExchange';
 import type { AxiosInstance } from 'axios';
 import { inject, injectable } from 'tsyringe';
 

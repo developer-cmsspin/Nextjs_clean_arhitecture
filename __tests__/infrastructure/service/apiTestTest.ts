@@ -1,4 +1,4 @@
-import RequestExchange from '@/domain/test/models/requestExchange';
+import RequestExchange from '@/domain/test/entities/requestExchange';
 import ApiTest from '@/infrastructure/service/Test/ApiTest';
 import { AxiosInstance, AxiosResponse } from 'axios';
 import { It, Mock } from 'moq.ts';

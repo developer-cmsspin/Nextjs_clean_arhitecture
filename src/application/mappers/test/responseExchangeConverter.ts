@@ -1,6 +1,6 @@
 import { mapper } from '@/application/configuration/mappings/mapper';
 import ResponseExchangeDto from '@/domain/test/dtos/responseExchangeDto';
-import ResponseExchange from '@/domain/test/models/responseExchange';
+import ResponseExchange from '@/domain/test/entities/responseExchange';
 import AbstractConverter from '../abstractConverter';
 
 export default class ResponseExchangeConverter extends AbstractConverter<ResponseExchange, ResponseExchangeDto> {
